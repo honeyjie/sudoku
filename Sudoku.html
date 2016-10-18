@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>数独游戏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<style>
+		@media screen and (min-device-width: 300px) {
+		    html {
+		        font-size: 6px;
+		    }
+		}
+		@media screen and (min-device-width: 540px) {  
+		    html {
+		        font-size: 9px;
+		    }
+		}
+		@media screen and (min-device-width: 760px) {
+		    html {
+		        font-size: 11px;
+		    }
+		}
+		@media screen and (min-device-width: 992px) {
+		    html {
+		        font-size: 12px;
+		    }
+		}
+		@media screen and (min-device-width: 1200px) {
+		    html {
+		        font-size: 13px;
+		    }
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.js"></script>
+</head>
+<body>
+	<div class= "sudoku">
+		<h1>数独游戏</h1>
+		<div id="wrap">
+			<div id = "clock">时间:&nbsp;<span>00</span>'&nbsp;<span>00</span>&nbsp;"</div>
+			<table>
+				<tbody></tbody>
+			</table>
+			<div id = "bt">
+				<button class ="start button_on">开始</button>
+				<button class = "stop">暂停</button>
+				<button class = "random">随机</button>
+			</div>
+		</div>
+	</div>
+	<script src="./sudoku.js"></script>	
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    font-size: 3rem;
+}
+input {
+    outline: medium;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+table {
+    border-collapse: collapse;
+}
+table td {
+    border: 0.1rem solid #99c;
+    width: 2.3rem;
+    height: 2.3rem;/*给td,input分别加上宽度*/
+}
+table tr {
+    border: 0.1rem solid #99c;
+}
+table td:nth-child(3n){
+    border-right: 0.2rem solid #669;
+}
+table tr:nth-child(3n){
+    border-bottom: 0.2rem solid #669;
+}
+table tr:first-child{
+    border-top: 0.2rem solid #669;
+}
+table tr{
+    border-left: 0.2rem solid #669;
+}
+td input {
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+}
+td input .err {
+    background: #900;
+}
+#clock {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+.sudoku {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#wrap {
+    width: 100%;
+    position: absolute;
+    margin-top: 3%;
+}
+.start,.stop,.random {
+    padding: 0.2rem 0.5rem;
+    background: #666;
+    color: #fff;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    margin: 1rem 0.5rem 0 0;
+    outline: none;
+    margin-left: 0.2rem;
+}
+.time_on,.random:hover {
+    background: #036;
+}
+.button_on {
+    background: #036;
+}
+td>input:not([readonly]) {
+    color: #369;
+    font-size: 1.3rem;
+}
+.err {
+    background-color: #900;
+    color: #FFF!important;
+}
