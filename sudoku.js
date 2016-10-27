@@ -50,10 +50,10 @@ $(function(){
     $("tbody").html(tb_content);
 
     var table_w = table.offsetWidth;
-    table.style.marginLeft = (width - table_w)/2 + "px";
+        table.style.marginLeft = (width - table_w)/2 + "px";
         clock.style.marginLeft = (width - table_w)/2 + "px";
         bt.style.marginLeft = (width - table_w)/2 + "px";
-    console.log(table_w);
+
     getData();
     $(".random").click(function(){
     //点击后改变选中数组并重新渲染数据
@@ -64,7 +64,6 @@ $(function(){
         $("td>input").removeClass("err");
         clearTimeout(timeOutId);
         $("#clock>span").text("00");
-        console.log("done")
         generatedata();
     };
 
@@ -99,7 +98,7 @@ $(function(){
                 updateTime();
         };
     });
-    // console.log(flag);
+
     $(".stop").click(function(el){
         if (flag) {//先点击再根据标识判断
             clearTimeout(timeOutId);

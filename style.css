@@ -19,8 +19,8 @@ h1 {
 input {
     outline: medium;
     border: none;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 table {
     border-collapse: collapse;
@@ -64,7 +64,7 @@ td input .err {
 }
 #wrap {
     width: 100%;
-    position: absolute;
+    position: relative;
     margin-top: 3%;
 }
 .start,.stop,.random {
